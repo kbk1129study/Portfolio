@@ -1,0 +1,101 @@
+@charset "UTF-8";* { margin: 0; padding: 0; }
+.section { position: relative; } 
+body { background: url("../images/laptop.jpg") no-repeat center center fixed; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}
+/* ========================================풀페이지 첫번째=======================*/
+.section:nth-child(1) { width: 100%; height: 100%; background-color: #1b1b1e; } 
+.section .typing { font-size: 100px; color: #fff; text-align: center; font-weight: bold; font-family: "Khand", sans-serif; } 
+/* 왼쪽가운데 검은색으로 나타나는 글씨 안보이게 */
+.section .typing-txt { visibility: hidden; } 
+
+/* ==================================풀페이지 두번째=============================*/
+.section:nth-child(2) { width: 100%; height: 100%; } 
+.section:nth-child(2) .sectionInner { width: 95%; height: 95%; margin: 0 auto; position: relative; } 
+.section:nth-child(2) h2.title { width: 100px; color: #fff; font-size: 70px; margin-bottom: 30px; border-top: 1px solid #fff; font-family: "Khand", sans-serif; font-weight: 400; position: absolute; } 
+.section figure.Projects {position: relative; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap; top: 20%; width: 750px; height: 400px; text-align: center; margin: 0 auto; } 
+.section figure.Projects>div { overflow: hidden; width: calc(20% - 1px); text-align: center; margin: 0 auto; width: 150px; height: 200px;} 
+figure.Projects img { width: 150px; height: 200px; object-fit: cover; transition-duration: 1s; background-position: center; position: relative; margin: 0 auto; border: 5px solid #343B3E;} 
+figure.Projects img:hover { opacity: 0.5; transform: scale(1.2, 1.2); transition-duration: 0.3s; } 
+/* ================마우스호버시 텍스트나타나기=================== */
+.banner_img:hover:after,
+.banner_img:hover > .hover_text { display:block; } 
+.banner_img:after,.hover_text { display:none; } 
+.banner_img:after { content:''; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 10; width: 0; height: 0; } 
+.banner_img { overflow: hidden; display: inline; } 
+.banner_img:hover img { transform: scale(1.2); transition: 1s; } 
+.hover_text { position: absolute; top: -70px; left: 0px; color: #AD4F2E; z-index: 20; font-weight: bold; font-size: 45px; font-family: "Khand", sans-serif; background-color: #fff; text-align: left; justify-content: center; margin: 0 auto; } 
+.ProjectsImg:nth-child(2) .hover_text { color: #7B4CDF; } 
+.ProjectsImg:nth-child(3) .hover_text { color: #000; } 
+.ProjectsImg:nth-child(4) .hover_text { color: #BD86C2; } 
+.ProjectsImg:nth-child(5) .hover_text { color: #EB150A; } 
+.ProjectsImg:nth-child(6) .hover_text { color: #FB9FA4; } 
+.ProjectsImg:nth-child(7) .hover_text { color: #C8233A; } 
+.ProjectsImg:nth-child(8) .hover_text { color: #0053A7; } 
+.ProjectsImg:nth-child(9) .hover_text { color: #0DDFF9; } 
+.ProjectsImg:nth-child(10) .hover_text { color: #EE7623; } 
+
+/* ====================================풀페이지 세번째===========================*/
+.section:nth-child(3) { width: 100%; height: 100%;  } 
+.section:nth-child(3) .sectionInner { width: 95%; height: 95%; margin: 0 auto; position: relative; } 
+.section:nth-child(3) h2.title { width: 100px; color: #fff; font-size: 70px; margin-bottom: 30px; border-top: 1px solid #fff; font-family: "Khand", sans-serif; font-weight: 400; position: absolute; } 
+.section:nth-child(3) figure.ToolImgs { margin: 0 auto; display: flex; justify-content: space-between; text-align: center; align-items: center; position: relative; width: 100%; height: 100%; }
+.section:nth-child(3) figure.ToolImgs ul { margin: 0 auto; display: flex; justify-content: space-between; text-align: center; align-items: center; width: 410px; height: 429px; flex-wrap: wrap; justify-content: space-between; position: relative;} 
+.section:nth-child(3) .sectionInner figure.ToolImgs ul li { color: #fff; font-family: "Khand", sans-serif; font-size: 15px; position: relative; text-align: center; display: block; justify-content: space-between; padding: 10px;} 
+.section:nth-child(3) .sectionInner figure.ToolImgs ul li img { width: 100px; height: 100px; position: relative; display: flex; margin: 0 auto; text-align: center; flex-wrap: wrap; justify-content: space-between; } 
+.section:nth-child(3) .sectionInner figure.ToolImgs ul li span { top: 0; position: relative; } 
+/* 이미지 호버시 확대 */
+figure.ToolImgs li { object-fit: cover; transition-duration: 0.5s; } 
+figure.ToolImgs li:hover { transform: scale(1.2, 1.2); transition-duration: 0.3s; } 
+
+/* ====================================풀페이지 네번째===========================*/
+.section:nth-child(4) { width: 100%; height: 100%; background: url("../images/bg.jpg") no-repeat center center fixed; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;} 
+.section:nth-child(4) .sectionInner { width: 95%; height: 95%; margin: 0 auto; position: relative; } 
+.section:nth-child(4) h2.title { width: 100px; color: #fff; font-size: 70px; margin-bottom: 30px; border-top: 1px solid #fff; font-family: "Khand", sans-serif; font-weight: 400; position: absolute; } 
+.section:nth-child(4) .sectionInner .profile_pic { position: absolute; width: 200px; height: 200px; display: flex; bottom: 0; } 
+.section:nth-child(4) .sectionInner .profile_p { text-align: right; position: relative; left: 50%; top: 50%; transform: translate(-50%,-50%); } 
+.section:nth-child(4) .sectionInner .github_img { width: 30px; height: 30px; right: 10px; top: 5px; position: relative; } 
+.section:nth-child(4) .sectionInner .profile_p2 ul { position: relative; top: 0; } 
+.section:nth-child(4) .sectionInner .profile_p2 ul li { text-align: center; text-shadow: -2px 4px 3px #000; } 
+.section:nth-child(4) .sectionInner .bottomtext { position: absolute; bottom: 0; right: 0; text-align: center; } 
+.section:nth-child(4) .sectionInner .bottomtext>a { color: #fff; font-size: 40px; font-family: "Khand", sans-serif; list-style: none; position: relative; top: 0; left: 0; } 
+.section:nth-child(4) .sectionInner .bottomtext>a:hover { text-decoration: underline; color: #898989; } 
+/* 타이핑효과 */
+.sectionInner .profile_p2 ul li { font-size: 40px; color: #fff; text-align: left; font-weight: 500; font-family: "Khand", sans-serif; list-style: none; } 
+/* 왼쪽가운데 검은색으로 나타나는 글씨 안보이게 */
+.section .profile_p ul li { visibility: hidden; list-style: none; } 
+
+/*========== mobile 구조 ===========*/
+ @media (max-width:760px) {
+ /*1 페이지*/
+ #fullpage .typing ul li { color: #fff; text-align: center; font-weight: 500; margin: 0 auto; font: 500 50px/1 'Khand'; } 
+ /*2 페이지*/
+ #fullpage .section:nth-child(2) { width: 100%; height: 100%; } 
+ #fullpage .section:nth-child(2) .sectionInner { width: 95%; height: 95%; margin: 0 auto; position: relative; bottom: 0; } 
+ #fullpage .section:nth-child(2) h2.title { top: 0; width: 100px; color: #fff; font-size: 40px; border-top: 1px solid #fff; font-family: "Khand", sans-serif; font-weight: 400; position: relative; } 
+ #fullpage .section:nth-child(2) .sectionInner figure.Projects { width: 300px; height: 400px; text-align: center; justify-content: center; position: relative; top: -20px; top: 70px;}
+ #fullpage .section:nth-child(2) .sectionInner figure.Projects>div {width: 150px; height: 80px;}
+ #fullpage .section:nth-child(2) .sectionInner figure.Projects .ProjectsImg img { width: 150px; height: 80px; text-align: center; justify-content: center; object-fit: cover; position: relative; } 
+ #fullpage .section:nth-child(2) .sectionInner figure.Projects .ProjectsImg .hover_text , 
+ #fullpage .section:nth-child(2) .sectionInner figure.Projects .ProjectsImg .hover_text:hover , 
+ #fullpage .section:nth-child(2) .sectionInner figure.Projects .ProjectsImg .hover_text:visited { display: none; } 
+ /*3 페이지*/
+ #fullpage .section:nth-child(3) { width: 100%; height: 100%; } 
+ #fullpage .section:nth-child(3) .sectionInner { width: 95%; height: 95%; margin: 0 auto; position: relative; bottom: 0; text-align: center; justify-content: center; } 
+ #fullpage .section:nth-child(3) h2.title { top: 0; width: 100px; color: #fff; font-size: 40px; border-top: 1px solid #fff; font-family: "Khand", sans-serif; font-weight: 400; position: absolute; } 
+ #fullpage .section:nth-child(3) figure.ToolImgs { width: 100%; height: 100%; position: absolute; top: 0; left: 0; } 
+ #fullpage .section:nth-child(3) figure.ToolImgs ul { position: relative; display: block; width: 100%; height: 400px; text-align: left; display: flex; flex-wrap: wrap;} 
+ #fullpage .section:nth-child(3) figure.ToolImgs ul li { position: relative; left: 0; text-align: left; text-align: left; width: 150px; display: flex; flex-wrap: wrap; } 
+ #fullpage .section:nth-child(3) figure.ToolImgs ul li img { text-align: left; position: relative; width: 35px; height: 35px; padding: 0; top: 0; margin: 0; left: 0; } 
+ #fullpage .section:nth-child(3) figure.ToolImgs li span { font-size: 15px; text-align: right; position: absolute; top: 0; right: 0; margin: 0; line-height: 50px;
+}
+ /* 4 페이지 */
+ #fullpage .section:nth-child(4) { width: 100%; height: 100%; } 
+ #fullpage .section:nth-child(4) .sectionInner { width: 95%; height: 95%; margin: 0 auto; position: relative; bottom: 0; } 
+ #fullpage .section:nth-child(4) h2.title { top: 0; width: 100px; color: #fff; font-size: 40px; font-family: "Khand", sans-serif; font-weight: 400; position: absolute; } 
+ #fullpage .section:nth-child(4) .profile_pic { width: 100px; height: 100px; margin: 0 auto; position: absolute; left: 0; top: 45%;}
+ #fullpage .section:nth-child(4) .profile_p { width: 100%; height: 90%; text-align: right; position: absolute; } 
+ #fullpage .section:nth-child(4) .profile_p ul { position: relative; align-items: center; } 
+ #fullpage .section:nth-child(4) .profile_p2 { width: 100%; height: 90%; text-align: right; position: absolute; top: 0; } 
+ #fullpage .section:nth-child(4) .profile_p2 ul { position: relative; align-items: center; } 
+ #fullpage .section:nth-child(4) .profile_p2 ul li { font-size: 25px; text-align: right; line-height: 30px; position: relative; margin: 0 auto; text-shadow: -2px 4px 3px #000; top: 50px;} 
+ #fullpage .section:nth-child(4) .sectionInner .github_img { position: relative; top: 0; left: 0; } 
+ }
