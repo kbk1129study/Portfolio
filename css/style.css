@@ -92,7 +92,7 @@ figure.ToolImgs li:hover { transform: scale(1.2, 1.2); transition-duration: 0.3s
  #fullpage .section:nth-child(6) { width: 100%; height: 100%; } 
  #fullpage .section:nth-child(6) .sectionInner { width: 95%; height: 95%; margin: 0 auto; position: relative; bottom: 0; } 
  #fullpage .section:nth-child(6) h2.title { top: 0; width: 100px; color: #fff; font-size: 40px; border-top: 1px solid #fff; font-family: "Khand", sans-serif; font-weight: 400; position: relative; } 
- .sectionInner figure.Projects { text-align: center; justify-content: center; position: relative; top: 70px; } 
+ .sectionInner figure.Projects { text-align: center; justify-content: center; position: relative; top: 20px; width: 100%; height: 100%;} 
  .sectionInner figure.Projects>div { width: 300px; height: 200px; } 
  .sectionInner figure.Projects .ProjectsImg img { width: 300px; height: 200px; text-align: center; justify-content: center; object-fit: cover; position: relative;} 
  .sectionInner figure.Projects .ProjectsImg .hover_text , 
@@ -109,10 +109,10 @@ figure.ToolImgs li:hover { transform: scale(1.2, 1.2); transition-duration: 0.3s
  #fullpage .section:nth-child(7) .sectionInner { width: 95%; height: 95%; margin: 0 auto; position: relative; bottom: 0; text-align: center; justify-content: center; } 
  #fullpage .section:nth-child(7) h2.title { top: 0; width: 100px; color: #fff; font-size: 40px; border-top: 1px solid #fff; font-family: "Khand", sans-serif; font-weight: 400; position: absolute; } 
  #fullpage .section:nth-child(7) figure.ToolImgs { width: 100%; height: 100%; position: absolute; top: 0; left: 0; } 
- #fullpage .section:nth-child(7) figure.ToolImgs ul { position: relative; display: block; width: 90%; height: 700px; text-align: left; display: flex; flex-wrap: wrap; } 
- #fullpage .section:nth-child(7) figure.ToolImgs ul li { position: relative; left: 0; text-align: left; text-align: left; width: 80px; display: flex; flex-wrap: wrap; } 
- #fullpage .section:nth-child(7) figure.ToolImgs ul li img { text-align: left; position: relative; width: 30px; height: 30px; padding: 0; top: 0; margin: 0; left: 0; } 
- #fullpage .section:nth-child(7) figure.ToolImgs li span { font-size: 10px; text-align: left; position: absolute; left: 55px; margin: 0; top:20px; } 
+ #fullpage .section:nth-child(7) figure.ToolImgs ul { position: relative; display: block; width: 80%; height: 80%; display: flex; flex-wrap: wrap; margin: 0 auto; } 
+ #fullpage .section:nth-child(7) figure.ToolImgs ul li { position: relative; left: 0; width: 40px; display: flex; flex-wrap: wrap; padding: 20px;} 
+ #fullpage .section:nth-child(7) figure.ToolImgs ul li img { text-align: left; position: relative; width: 25px; height: 25px; padding: 0; top: 0; margin: 0; left: 0;} 
+ #fullpage .section:nth-child(7) figure.ToolImgs li span { font-size: 10px; text-align: left; position: absolute; left: 50px; margin: 0; top:20px; } 
  /*8*/
  #fullpage .section:nth-child(8) { width: 100%; height: 100%; } 
  #fullpage .section:nth-child(8) .sectionInner { width: 95%; height: 95%; margin: 0 auto; position: relative; bottom: 0; } 
@@ -120,8 +120,8 @@ figure.ToolImgs li:hover { transform: scale(1.2, 1.2); transition-duration: 0.3s
  #fullpage .section:nth-child(8) .profile_pic { width: 100px; height: 100px; margin: 0 auto; position: absolute; left: 0; top: 45%; } 
  #fullpage .section:nth-child(8) .profile_p { width: 100%; height: 90%; text-align: right; position: absolute; } 
  #fullpage .section:nth-child(8) .profile_p ul { position: relative; align-items: center; } 
- #fullpage .section:nth-child(8) .profile_p2 { width: 100%; height: 90%; text-align: right; position: absolute; top: 0; } 
+ #fullpage .section:nth-child(8) .profile_p2 { width: 100%; height: 90%; text-align: right; position: absolute; top: 50px; } 
  #fullpage .section:nth-child(8) .profile_p2 ul { position: relative; align-items: center; } 
- #fullpage .section:nth-child(8) .profile_p2 ul li { font-size: 25px; text-align: right; line-height: 30px; position: relative; margin: 0 auto; text-shadow: -2px 4px 3px #000; top: 50px; } 
+ #fullpage .section:nth-child(8) .profile_p2 ul li { font-size: 25px; text-align: right; position: relative; margin: 0 auto; text-shadow: -2px 4px 3px #000; top: 0px; } 
  #fullpage .section:nth-child(8) .sectionInner .bottomtext { position: relative; top: 95%; right: -30%;} 
  }
