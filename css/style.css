@@ -11,8 +11,8 @@ body { background-color: #1b1b1e; }
 .section:nth-child(2) { width: 100%; height: 100%; } 
 .section:nth-child(2) .sectionInner { width: 95%; height: 95%; margin: 0 auto; position: relative; } 
 .section:nth-child(2) h2.title { width: 100px; color: #fff; font-size: 70px; margin-bottom: 30px; border-top: 1px solid #fff; font-family: "Khand", sans-serif; font-weight: 400; position: absolute; } 
-.section figure.Projects { position: relative; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap; top: 27%; text-align: center; margin: 0 auto; } 
-.section figure.Projects>div { overflow: hidden; width: calc(20% - 1px); text-align: center; margin: 0 auto; width: 600px; height: 400px; } 
+.section figure.Projects { position: relative; margin: 0 auto; justify-content: space-between; flex-wrap: wrap; top: 27%; text-align: center; margin: 0 auto; } 
+.section figure.Projects>div { overflow: hidden; width: calc(20% - 1px); text-align: center; margin: 0 auto; width: 600px; height: 400px; margin: 40px; } 
 figure.Projects img { width: 600px; height: 400px; object-fit: cover; transition-duration: 1s; background-position: center; position: relative; margin: 0 auto; text-align: center; } 
 /* figure.Projects img:hover { opacity: 0.5; transform: scale(1.2, 1.2); transition-duration: 0.3s; } */
 .section:nth-child(3) { width: 100%; height: 100%; } 
@@ -33,6 +33,7 @@ figure.Projects img { width: 600px; height: 400px; object-fit: cover; transition
 .ProjectsImg { position: relative; display: inline-block; width: 360px; height: 225px; } 
 .ProjectsImg .overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); display: none; } 
 .ProjectsImg .overlay p { position: relative; top: 20%; text-align: center; display: flex; color: #fff; z-index: 20; font-weight: 500; font-size: 50px; font-family: "Khand", sans-serif; justify-content: center; margin: 0 auto; opacity: 0.5; }
+.ProjectsImg .overlay span { position: relative; top: 60%; text-align: left; display: flex; color: #fff; z-index: 20; font-weight: 500; font-size: 20px; font-family: "Khand", sans-serif; justify-content: center;  opacity: 0.8; }
 .ProjectsImg:hover .overlay { display: block; } 
 .ProjectsImg .buttons { position: absolute; top: 60%; left: 50%; transform: translate(-50%, -50%); display: none; gap: 7px; } 
 .ProjectsImg img { width: 100%; height: 100%; } 
@@ -42,13 +43,13 @@ figure.Projects img { width: 600px; height: 400px; object-fit: cover; transition
 .ProjectsImg .buttons button:hover { background-color: #000; color: #fff; } 
 
 /* ====================================풀페이지 7===========================*/
-.section:nth-child(7) { width: 100%; height: 100%; } 
+.section:nth-child(7) { width: 100%; height: 100%;} 
 .section:nth-child(7) .sectionInner { width: 95%; height: 95%; margin: 0 auto; position: relative; } 
 .section:nth-child(7) h2.title { width: 100px; color: #fff; font-size: 70px; margin-bottom: 30px; border-top: 1px solid #fff; font-family: "Khand", sans-serif; font-weight: 400; position: absolute; } 
 .section:nth-child(7) figure.ToolImgs { margin: 0 auto; display: flex; justify-content: space-between; text-align: center; align-items: center; position: relative; width: 100%; height: 100%; } 
-.section:nth-child(7) figure.ToolImgs ul { margin: 0 auto; display: flex; justify-content: space-between; text-align: center; align-items: center; flex-wrap: wrap; justify-content: center; position: relative; } 
+.section:nth-child(7) figure.ToolImgs ul { margin: 0 auto; display: flex; justify-content: space-between; text-align: center; align-items: center; flex-wrap: wrap; justify-content: center; position: relative; width: 61%; } 
 .section:nth-child(7) .sectionInner figure.ToolImgs ul li { color: #fff; font-family: "Khand", sans-serif; font-size: 15px; position: relative; text-align: center; display: block; padding: 15px; } 
-.section:nth-child(7) .sectionInner figure.ToolImgs ul li img { width: 80px; height: 80px; position: relative; display: flex; text-align: center; flex-wrap: wrap; /*justify-content: space-between;*/ } 
+.section:nth-child(7) .sectionInner figure.ToolImgs ul li img { width: 80px; height: 80px; position: relative; display: flex; text-align: center;  /*justify-content: space-between;*/ } 
 .section:nth-child(7) .sectionInner figure.ToolImgs ul li span { top: 15px; position: relative; display: flex; text-align: center; justify-content: center; } 
 /* 이미지 호버시 확대 */
 figure.ToolImgs li { object-fit: cover; transition-duration: 0.5s; } 
@@ -91,19 +92,25 @@ figure.ToolImgs li:hover { transform: scale(1.2, 1.2); transition-duration: 0.3s
  #fullpage .section:nth-child(6) { width: 100%; height: 100%; } 
  #fullpage .section:nth-child(6) .sectionInner { width: 95%; height: 95%; margin: 0 auto; position: relative; bottom: 0; } 
  #fullpage .section:nth-child(6) h2.title { top: 0; width: 100px; color: #fff; font-size: 40px; border-top: 1px solid #fff; font-family: "Khand", sans-serif; font-weight: 400; position: relative; } 
- .sectionInner figure.Projects { text-align: center; justify-content: center; position: relative; top: -20px; top: 70px; } 
- .sectionInner figure.Projects>div { width: 300px; height: 200px; padding: 10px; } 
- .sectionInner figure.Projects .ProjectsImg img { width: 300px; height: 200px; text-align: center; justify-content: center; object-fit: cover; position: relative; padding: 10px;} 
+ .sectionInner figure.Projects { text-align: center; justify-content: center; position: relative; top: 70px; } 
+ .sectionInner figure.Projects>div { width: 300px; height: 200px; } 
+ .sectionInner figure.Projects .ProjectsImg img { width: 300px; height: 200px; text-align: center; justify-content: center; object-fit: cover; position: relative;} 
  .sectionInner figure.Projects .ProjectsImg .hover_text , 
  .sectionInner figure.Projects .ProjectsImg .hover_text:hover , 
- .sectionInner figure.Projects .ProjectsImg .hover_text:visited { display: none; } 
+ .sectionInner figure.Projects .ProjectsImg .hover_text:visited { display: none; }
+.ProjectsImg { position: relative; display: inline-block; position: relative; top: 0; left: 0; width: 100%; height: 100%; } 
+.ProjectsImg .overlay { position: absolute; top: 0; left: 0; background-color: rgba(0, 0, 0, 0.5); display: none; width: 300px; height: 200px; } 
+.ProjectsImg .overlay p { position: relative; top: 20%; text-align: center; display: flex; color: #fff; z-index: 20; font-weight: 500; font-size: 35px; font-family: "Khand", sans-serif; justify-content: center; margin: 0 auto; opacity: 0.5; }
+.ProjectsImg .overlay span { position: relative; top: 45%; text-align: center; display: flex; color: #fff; z-index: 20; font-weight: 500; font-size: 12px; font-family: "Khand", sans-serif; justify-content: center;  opacity: 0.8; }
+.ProjectsImg:hover .overlay { display: block; }
+.ProjectsImg .buttons button { padding: 5px 25px; border: none; border-radius: 50px; outline: none; cursor: pointer; box-shadow: 0 0 5px rgba(0,0,0,0.7); background-color: #2C2843; color: #fff; font-size: 15px; font-family: "Khand", sans-serif; font-weight: 400; }  
  /*7*/
  #fullpage .section:nth-child(7) { width: 100%; height: 100%; } 
  #fullpage .section:nth-child(7) .sectionInner { width: 95%; height: 95%; margin: 0 auto; position: relative; bottom: 0; text-align: center; justify-content: center; } 
  #fullpage .section:nth-child(7) h2.title { top: 0; width: 100px; color: #fff; font-size: 40px; border-top: 1px solid #fff; font-family: "Khand", sans-serif; font-weight: 400; position: absolute; } 
  #fullpage .section:nth-child(7) figure.ToolImgs { width: 100%; height: 100%; position: absolute; top: 0; left: 0; } 
- #fullpage .section:nth-child(7) figure.ToolImgs ul { position: relative; display: block; width: 100%; height: 700px; text-align: left; display: flex; flex-wrap: wrap; } 
- #fullpage .section:nth-child(7) figure.ToolImgs ul li { position: relative; left: 0; text-align: left; text-align: left; width: 100px; display: flex; flex-wrap: wrap; } 
+ #fullpage .section:nth-child(7) figure.ToolImgs ul { position: relative; display: block; width: 90%; height: 700px; text-align: left; display: flex; flex-wrap: wrap; } 
+ #fullpage .section:nth-child(7) figure.ToolImgs ul li { position: relative; left: 0; text-align: left; text-align: left; width: 80px; display: flex; flex-wrap: wrap; } 
  #fullpage .section:nth-child(7) figure.ToolImgs ul li img { text-align: left; position: relative; width: 30px; height: 30px; padding: 0; top: 0; margin: 0; left: 0; } 
  #fullpage .section:nth-child(7) figure.ToolImgs li span { font-size: 10px; text-align: left; position: absolute; left: 55px; margin: 0; top:20px; } 
  /*8*/
