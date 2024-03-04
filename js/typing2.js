@@ -43,8 +43,8 @@ $(window).ready(function() {
        
            setTimeout(function(){
              //1초후에 다시 타이핑 반복 시작
-             tyInt = setInterval(typing,100);
-           },1000);
+             tyInt = setInterval(typing,80);
+           },500);
           } else if(liIndex==liLength-1){
             
            //마지막 문장까지 써지면 반복종료
@@ -63,8 +63,8 @@ $(window).ready(function() {
             $(".profile_p2 ul li").html("")
               
               //반복시작
-              tyInt = setInterval(typing,100);
-            }, 1000);
+              tyInt = setInterval(typing,80);
+            }, 5000);
             
             
           }
